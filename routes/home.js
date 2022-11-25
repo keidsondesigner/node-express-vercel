@@ -2,10 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.post("/", async (req, res, next) => {
-  return res.status(200).json({
-    title: "Express Testing",
-    message: "The app is working properly!",
-  });
+  return res.status(200).json(req.body);
 });
 
 module.exports = router;
