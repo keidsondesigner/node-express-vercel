@@ -1,7 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
-const test = [];
+const test = [
+  {
+    "nome": "Keidson",
+    "sobrenome": "Roby",
+    "email": "keidsondesigner@gmail.com",
+    "idade": "21",
+    "peso": "78",
+    "altura": "1.75"
+  }
+];
 
 router.post("/", async (req, res, next) => {
   test.push(req.body);
